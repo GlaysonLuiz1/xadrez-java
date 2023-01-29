@@ -25,9 +25,6 @@ public abstract class ChessPiece extends Piece {
 
     public void increaseMoveCount() {
         moveCount++;
-    }
-
-    public void increaseMoveCount() {
         moveCount--;
     }
 
@@ -39,6 +36,9 @@ public abstract class ChessPiece extends Piece {
         ChessPiece p = (ChessPiece) getBoard().piece(position);
         return p != null && p.getColor() != color;
 
+    }
+
+    public void decreaseMoveCount() {
     }
 
 }
